@@ -1,0 +1,105 @@
+/* Colors */
+$color-text-on-low-contrast-high: #262626;
+$color-text-on-low-contrast-low: #555555;
+$color-text-on-low-contrast-disabled: #9d9d9d;
+$color-text-on-high-contrast-default: #ffffff;
+$color-text-on-high-contrast-disabled: #ffffff;
+$color-text-primary-default: #661fff;
+$color-text-primary-disabled: #661fff;
+$color-text-status-critical: #bc022a;
+$color-text-status-warning: #ebbd17;
+$color-text-status-success: #268e50;
+$color-text-status-information: #2158ce;
+
+$color-icon-on-low-contrast-high: #262626;
+$color-icon-on-low-contrast-low: #555555;
+$color-icon-on-low-contrast-disabled: #9d9d9d;
+$color-icon-on-high-contrast-default: #ffffff;
+$color-icon-on-high-contrast-disabled: #ffffff;
+$color-icon-primary-default: #661fff;
+$color-icon-primary-disabled: #661fff;
+$color-icon-status-critical: #bc022a;
+$color-icon-status-warning: #ebbd17;
+$color-icon-status-success: #268e50;
+$color-icon-status-information: #2158ce;
+
+$color-action-primary-default: #661fff;
+$color-action-primary-hover: #5219cc;
+$color-action-primary-active: #3d1399;
+$color-action-primary-disabled: #e9e9e9;
+$color-action-neutral-default: #555555;
+$color-action-neutral-hovered: #5219cc;
+$color-action-neutral-pressed: #3d1399;
+$color-action-neutral-disabled: #e9e9e9;
+$color-action-critical-default: #bc022a;
+$color-action-critical-hover: #a00224;
+$color-action-critical-active: #84ff1d;
+$color-action-critical-disabled: #e9e9e9;
+
+$color-interactive-primary-default: #661fff;
+$color-interactive-primary-hover: #844aff;
+$color-interactive-primary-active: #3d1399;
+$color-interactive-primary-disabled: #9d9d9d;
+$color-interactive-neutral-default: #262626;
+$color-interactive-neutral-hover: #844aff;
+$color-interactive-neutral-active: #3d1399;
+$color-interactive-neutral-disabled: #9d9d9d;
+$color-interactive-critical-default: #bc022a;
+$color-interactive-critical-hover: #c6284a;
+$color-interactive-critical-active: #84ff1d;
+$color-interactive-critical-disabled: #9d9d9d;
+
+$color-border-neutral-low-contrast-high: #d9d9d9;
+$color-border-neutral-low-contrast-low: #f5f5f5;
+$color-border-neutral-high-contrast-high: #262626;
+$color-border-neutral-high-contrast-low: #7b7b7b;
+$color-border-primary-default: #661fff;
+$color-border-primary-disabled: #661fff;
+$color-border-status-critical: #bc022a;
+$color-border-status-warning: #ebbd17;
+$color-border-status-success: #268e50;
+$color-border-status-information: #2158ce;
+
+$color-surface-neutral-ghost-default: #ffffff;
+$color-surface-neutral-ghost-hover: #e9e9e9;
+$color-surface-neutral-ghost-active: #d9d9d9;
+$color-surface-neutral-white-default: #ffffff;
+$color-surface-neutral-white-hover: #f5f5f5;
+$color-surface-neutral-white-active: #e9e9e9;
+$color-surface-neutral-low-default: #f5f5f5;
+$color-surface-neutral-low-hover: #e9e9e9;
+$color-surface-neutral-low-active: #d9d9d9;
+$color-surface-neutral-medium-default: #ececec;
+$color-surface-neutral-high-default: #262626;
+
+$color-surface-primary-default: #661fff;
+$color-surface-primary-subdued: #f0e7ff;
+
+$color-surface-status-critical-high: #bc022a;
+$color-surface-status-critical-low: #ffe0e6;
+$color-surface-status-warning-high: #ebbd17;
+$color-surface-status-warning-low: #fff9e0;
+$color-surface-status-success-high: #268e50;
+$color-surface-status-success-low: #e8f7ee;
+$color-surface-status-information-high: #2158ce;
+$color-surface-status-information-low: #e0ebff;
+
+$color-background-default: #ffffff;
+
+$color-decorative-surface-light-green-100: #dff3f5;
+$color-decorative-surface-light-green-200: #ade1e4;
+$color-decorative-surface-light-green-300: #74ced3;
+$color-decorative-surface-light-green-400: #26bbbf;
+$color-decorative-surface-light-blue-100: #ddf5fa;
+$color-decorative-surface-light-blue-200: #a9e4f4;
+$color-decorative-surface-light-blue-300: #6dd2ee;
+$color-decorative-surface-light-blue-400: #08c0e9;
+
+$color-decorative-surface-light-orange-100: #fbe8e4;
+$color-decorative-surface-light-orange-200: #fcc9b4;
+$color-decorative-surface-light-orange-300: #f9a683;
+$color-decorative-surface-light-orange-400: #f58550;
+$color-decorative-surface-light-yellow-100: #fef7e2;
+$color-decorative-surface-light-yellow-200: #fceab6;
+$color-decorative-surface-light-yellow-300: #fadd87;
+$color-decorative-surface-light-yellow-400: #f9d157;
