@@ -27,6 +27,10 @@ const sortByLabel = function(a: { label: string; }, b: { label: string; }) {
   return labelA > labelB ? 1 : labelA < labelB ? -1 : 0;
 };
 
+const capitalizeFirstLetter = function(string: string): string {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
 @Injectable()
 export class ManifestService {
   protected _manifestChanges = new ReplaySubject<Manifest>(1);
@@ -85,7 +89,7 @@ export class ManifestService {
 
     // form datastructure
     const groupedCategories = Object.keys(componentsDict).reduce((categories: any, key: string) => {
-      const categoryKey = key.toLowerCase();
+      const categoryKey = capitalizeFirstLetter(key.toLowerCase());
       const category = {
         label: categoryKey,
         children: componentsDict[key].map((component: ComponentDescriptor) => ({
