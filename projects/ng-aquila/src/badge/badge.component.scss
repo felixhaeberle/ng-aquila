@@ -2,7 +2,7 @@
 :host {
   @include type-style(badge);
   display: inline-block;
-  padding: 0 nx-spacer(2xs);
+  padding: 0 nx-spacer(xs);
   white-space: nowrap;
   border-radius: nx-border-radius(s) * 3;
   min-width: nx-spacer(m);
