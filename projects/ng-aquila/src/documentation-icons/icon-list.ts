@@ -1,39 +1,68 @@
-export interface FontIcon {
-    alias: string;
-    font: string;
-}
+// @ts-nocheck
+// the SVG imports doesn't support are not typed, so we have to ts-nocheck the imports
+import emailIcon from '@carbon/icons/es/email/24';
+import notificationIcon from '@carbon/icons/es/notification/24';
+import bookmarkIcon from '@carbon/icons/es/bookmark/24';
+import downloadIcon from '@carbon/icons/es/download/24';
+import copyIcon from '@carbon/icons/es/copy/24';
+import logoFacebookIcon from '@carbon/icons/es/logo--facebook/24';
+import documentBlankIcon from '@carbon/icons/es/document--blank/24';
+import documentIcon from '@carbon/icons/es/document/24';
+import informationIcon from '@carbon/icons/es/information/24';
+import launchIcon from '@carbon/icons/es/launch/24';
+import lockedIcon from '@carbon/icons/es/locked/24';
+import documentPdfIcon from '@carbon/icons/es/document--pdf/24';
+import penIcon from '@carbon/icons/es/pen/24';
+import maximizeIcon from '@carbon/icons/es/maximize/24';
+import redoIcon from '@carbon/icons/es/redo/24';
+import phoneIcon from '@carbon/icons/es/phone/24';
+import carIcon from '@carbon/icons/es/car/24';
+import airlinePassengerCareIcon from '@carbon/icons/es/airline--passenger-care/24';
+import planeIcon from '@carbon/icons/es/plane/24';
+import searchIcon from '@carbon/icons/es/search/24';
+import saveIcon from '@carbon/icons/es/save/24';
+import settingsIcon from '@carbon/icons/es/settings/24';
+import chatIcon from '@carbon/icons/es/chat/24';
+import logoTwitterIcon from '@carbon/icons/es/logo--twitter/24';
+import userIcon from '@carbon/icons/es/user/24';
 
-export const ICON_MAPPINGS: { [key: string]: FontIcon } = {
-'bars': { alias: 'bars', font: 'far'},
-'bell-o': { alias: 'bell', font: 'far' },
-'bookmark-o': { alias: 'bookmark', font: 'far' },
-'download': { alias: 'download', font: 'fas' },
-'duplicate': { alias: 'copy', font: 'far' },
-'facebook': { alias: 'facebook-square', font: 'fab' },
-'file': { alias: 'file', font: 'far' },
-'file-text': { alias: 'file-alt', font: 'far' },
-'info-circle-o': { alias: 'info-circle', font: 'fas' },
-'launch': { alias: 'external-link-alt', font: 'fas' },
-'lock-o': { alias: 'lock', font: 'fas' },
-'mail': { alias: 'envelope', font: 'far' },
-'mail-o': { alias: 'envelope', font: 'fas' },
-'pdf': { alias: 'file-pdf', font: 'far' },
-'pen': { alias: 'pen', font: 'fas' },
-'popout': { alias: 'expand-alt', font: 'fas' },
-'refresh': { alias: 'redo', font: 'fas' },
-'phone-o': { alias: 'phone-alt', font: 'fas' },
-'product-car': { alias: 'car', font: 'fas' },
-'product-care-insurance': { alias: 'hand-holding-heart', font: 'fas' },
-'product-heart': { alias: 'heart', font: 'far' },
-'product-plane': { alias: 'plane', font: 'fas' },
-'product-search': { alias: 'search', font: 'fas' },
-'save-o': { alias: 'save', font: 'far' },
-'search': { alias: 'search', font: 'fas' },
-'setting': { alias: 'cog', font: 'fas' },
-'speech-bubble-o': { alias: 'comment', font: 'far' },
-'twitter': { alias: 'twitter', font: 'fab' },
-'user-o': { alias: 'user', font: 'far' },
+export interface SvgIcon {
+    svg: string;
+  }
+
+export const ICON_MAPPINGS: { [key: string]: SvgIcon } = {
+//'bars': { svg: 'bars' },
+'bell-o': { svg: notificationIcon },
+'bookmark-o': { svg: bookmarkIcon },
+'download': { svg: downloadIcon },
+'duplicate': { svg: copyIcon },
+'facebook': { svg: logoFacebookIcon },
+'file': { svg: documentBlankIcon },
+'file-text': { svg: documentIcon },
+'info-circle-o': { svg: informationIcon },
+'launch': { svg: launchIcon },
+'lock-o': { svg: lockedIcon },
+'mail': { svg: emailIcon },
+'mail-o': { svg: emailIcon },
+'pdf': { svg: documentPdfIcon },
+'pen': { svg: penIcon },
+'popout': { svg: maximizeIcon },
+'refresh': { svg: redoIcon },
+'phone-o': { svg: phoneIcon },
+'product-car': { svg: carIcon },
+'product-care-insurance': { svg: airlinePassengerCareIcon },
+//'product-heart': { svg: 'heart'},
+'product-plane': { svg: planeIcon },
+'product-search': { svg: searchIcon },
+'save-o': { svg: saveIcon },
+'search': { svg: searchIcon },
+'setting': { svg: settingsIcon },
+'speech-bubble-o': { svg: chatIcon },
+'twitter': { svg: logoTwitterIcon },
+'user-o': { svg: userIcon},
 // the users icon in font awesome is not quadratic as a workaround
 // we just reuse the single user here
-'users': { alias: 'user', font: 'fas' }
+'users': { svg: userIcon }
 };
+
+

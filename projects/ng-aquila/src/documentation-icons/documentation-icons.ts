@@ -1,4 +1,7 @@
+// @ts-nocheck
 import { ICON_MAPPINGS } from './icon-list';
+import  { toString } from '@carbon/icon-helpers';
+import { DomSanitizer } from '@angular/platform-browser';
 
 import { NxIconModule, NxIconRegistry } from '@aposin/ng-aquila/icon';
 import { NgModule } from '@angular/core';
@@ -9,14 +12,14 @@ import { NgModule } from '@angular/core';
   providers: [],
 })
 export class NxDocumentationIconModule {
-  constructor(private _iconRegistry: NxIconRegistry) {
-    this._iconRegistry.registerFont('far', 'far', 'fa-');
-    this._iconRegistry.registerFont('fas', 'fas', 'fa-');
-    this._iconRegistry.registerFont('fab', 'fab', 'fa-');
-    this._iconRegistry.setDefaultFont('far');
+  constructor(private _iconRegistry: NxIconRegistry, private _sanitizer: DomSanitizer) {
+    /* Bypass SVG sanitizing */
+    const getSvgString = (svg: any): string => {
+      return this._sanitizer.bypassSecurityTrustHtml(toString(svg));
+    }
 
     Object.keys(ICON_MAPPINGS)
     .forEach(iconName =>
-      this._iconRegistry.addFontIcon(iconName, ICON_MAPPINGS[iconName].alias, ICON_MAPPINGS[iconName].font));
-  }
+      this._iconRegistry.addSvgIconLiteral(iconName, getSvgString(ICON_MAPPINGS[iconName].svg)));
+    }
 }
