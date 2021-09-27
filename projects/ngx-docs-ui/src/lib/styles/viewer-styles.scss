@@ -55,6 +55,17 @@ a {
 .docs-expert-container {
   @include var(background, documentation-expert-container-background);
   padding: 24px;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    // temporary fix
+    @include var(color, circle-toggle-selected-content-text-color);
+  }
 }
 
 ::ng-deep .docs-markdown--ul {
@@ -171,7 +182,7 @@ a {
 ::ng-deep .docs-api-h4 {
   font-size: 24px;
   line-height: 32px;
-  font-weight: 400;
+  font-weight: 600;
   margin: 16px 0;
 }
 
@@ -179,7 +190,7 @@ a {
 ::ng-deep .docs-api-h3 {
   font-size: 26px;
   line-height: 32px;
-  font-weight: 400;
+  font-weight: 600;
   margin-top: 32px;
   margin-bottom: 16px;
 }
@@ -190,7 +201,7 @@ a {
 ::ng-deep .docs-api-h2 {
   font-size: 30px;
   line-height: 36px;
-  font-weight: 400;
+  font-weight: 600;
   margin-bottom: 16px;
   margin-top: 0;
 }
@@ -206,7 +217,7 @@ a {
 ::ng-deep .docs-api-h1 {
   font-size: 40px;
   line-height: 48px;
-  font-weight: 400;
+  font-weight: 600;
   margin-top: 32px;
   margin-bottom: 16px;
 }
@@ -227,6 +238,10 @@ a {
   margin-top: 4px;
   margin-bottom: 16px;
   width: 100%;
+
+  code {
+    color: #ffffff;
+  }
 
   @media screen and (-ms-high-contrast: active) {
     border: 1px solid windowText;
