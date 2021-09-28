@@ -25,13 +25,17 @@ import settingsIcon from '@carbon/icons/es/settings/24';
 import chatIcon from '@carbon/icons/es/chat/24';
 import logoTwitterIcon from '@carbon/icons/es/logo--twitter/24';
 import userIcon from '@carbon/icons/es/user/24';
+import heartIcon from '@carbon/icons/es/favorite/24.js'
+import barsIcon from '@carbon/icons/es/menu/32.js'
+import switchSitesIcon from '@carbon/icons/es/switcher/24.js'
 
 export interface SvgIcon {
     svg: string;
   }
 
 export const ICON_MAPPINGS: { [key: string]: SvgIcon } = {
-//'bars': { svg: 'bars' },
+'bars': { svg: barsIcon },
+'switch-sites': { svg: switchSitesIcon },
 'bell-o': { svg: notificationIcon },
 'bookmark-o': { svg: bookmarkIcon },
 'download': { svg: downloadIcon },
@@ -51,7 +55,7 @@ export const ICON_MAPPINGS: { [key: string]: SvgIcon } = {
 'phone-o': { svg: phoneIcon },
 'product-car': { svg: carIcon },
 'product-care-insurance': { svg: airlinePassengerCareIcon },
-//'product-heart': { svg: 'heart'},
+'product-heart': { svg: heartIcon },
 'product-plane': { svg: planeIcon },
 'product-search': { svg: searchIcon },
 'save-o': { svg: saveIcon },
